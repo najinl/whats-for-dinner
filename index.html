@@ -15,15 +15,15 @@
         </h1>
         <section class="food-options">
           <div class="radio-button">
-             <input type="radio" id="side" name="course" value="Side">
+             <input type="radio" id="side" name="course" value="sides">
              <label>Side</label>
           </div>
           <div class="radio-button">
-             <input type="radio" id="main-dish" name="course" value="Main Dish">
+             <input type="radio" id="main-dish" name="course" value="mainDishes">
              <label>Main Dish</label>
           </div>
           <div class="radio-button">
-             <input type="radio" id="dessert" name="course" value="Dessert">
+             <input type="radio" id="dessert" name="course" value="desserts">
              <label>Dessert</label>
           </div>
           <div class="radio-button">
@@ -33,10 +33,13 @@
         </section>
           <button class="lets-cook">LET'S COOK!</button>
       </form>
-      <div class="boxed" id="right-pane">
+      <section class="boxed" id="right-pane">
         <img class="cookpot-image" src="./assets/cookpot.svg" alt>
         </img>
-      </div>
+        <h1 class="suggestion">You should cook:</h1>
+        <h2 id="dish"></h2>
+        <button class="clear">CLEAR</button>
+      </section>
     </section>
   </body>
   <script type="text/javascript" src="main.js"></script>
