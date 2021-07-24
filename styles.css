@@ -99,9 +99,11 @@ h1 {
 }
 
 h2 {
-  font-size: 33px;
+  font-size: 26px;
   font-style: bold;
   margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .clear {
@@ -111,6 +113,7 @@ h2 {
   margin-top: 9%;
   float: right;
   color: rgba(225, 225, 225, .9);
+  display: none;
 }
 
 

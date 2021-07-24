@@ -49,10 +49,8 @@ var food = {
 };
 
 var cookButton = document.querySelector('.lets-cook');
+var clearButton = document.querySelector('.clear');
 var selectedCourse;
-// var mainDish = food.mainDishes[getRandomNum(food.mainDishes)];
-// var dessert = food.desserts[getRandomNum(food.desserts)];
-// var returnSuggestion = document.querySelector('h2').innerHTML
 
 cookButton.addEventListener('click', function(event) {
   event.preventDefault();
@@ -61,37 +59,43 @@ cookButton.addEventListener('click', function(event) {
   toggleCookPotOff()
 });
 
-//create a variable that gets elements name by course
+clearButton.addEventListener('click', clearSuggestion);
+
 function chooseCourse() {
   var radioButton = document.getElementsByName('course');
   for(var i = 0; i < radioButton.length; i++) {
     if(radioButton[i].checked) {
-      selectedCourse = radioButton[i].value
+      selectedCourse = radioButton[i].value;
     }
   }
-}
+};
 
 function assignDishToCourse() {
-  var index = getRandomNum(food[selectedCourse]);
-    document.getElementById('dish').innerHTML = food[selectedCourse][index] + '!';
-
-
-
-    // if(selectedCourse === 'Side') {
-    //   document.getElementById('dish').innerHTML = food.sides[getRandomNum(food.sides)] + '!';
-    // } else if(selectedCourse === 'Main Dish') {
-    //   document.getElementById('dish').innerHTML = food.mainDishes[getRandomNum(food.mainDishes)] + '!';
-    // } else if(selectedCourse === 'Dessert') {
-    //   document.getElementById('dish').innerHTML = food.desserts[getRandomNum(food.desserts)] + '!';
-    // } else {
-    //   console.log('Try Again');
-    // }
+  // var index = getRandomNum(food[selectedCourse]);
+  var side = food.sides[getRandomNum(food.sides)];
+  var mainDish = food.mainDishes[getRandomNum(food.mainDishes)];
+  var dessert = food.desserts[getRandomNum(food.desserts)];
+  var fullMeal = `${mainDish} with a side of ${side} and ${dessert} for dessert!`;
+  // console.log(selectedCourse);
+    if(selectedCourse !== 'entire-meal') {
+      var index = getRandomNum(food[selectedCourse]);
+      document.getElementById('dish').innerHTML = food[selectedCourse][index] + '!';
+    } else {
+      document.getElementById('dish').innerHTML = fullMeal;
+      }
 };
+
 function toggleCookPotOff() {
   document.querySelector('.cookpot-image').style.display = 'none';
   document.querySelector('.suggestion').style.display = 'block';
-}
+  document.querySelector('.clear').style.display = 'block'
+};
 
 function getRandomNum(array) {
   return Math.floor(Math.random() * array.length);
+};
+
+
+function clearSuggestion() {
+  location.reload();
 }
