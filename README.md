@@ -1,8 +1,8 @@
 # What's for Dinner?
-**Functionality:
+*Functionality:
   What's for dinner? The ultimate question. This application generates a new random side, main dish, dessert, or the whole enchildada (pun intended) for those visitors who brought a real appetite. At login, a user is promted to enter their name and will be relocated to the main application page with a customized greeting. If a user doesn't want to be enticed by a randomly selected course option from a pre-populated list, they can add a recipe of their own! This recipe has to fit into the provided course categories, or else you will get an error message. The user can hit a clear button anytime that they want to clear out an added recipe of their own or one from the pre-populated list! BON APPETIT!
 
-**Contributers:
+*Contributers:
     name: Nadia Naji
     git handle: @najinl
 
