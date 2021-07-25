@@ -7,40 +7,62 @@
     <header class="site-header">What's for Dinner?
       <button class="add-recipe-button">ADD A RECIPE</button>
     </header>
-
+    <section class="login-home">
+      <h1 class="welcome">Let's Get Cookin'!</h1>
+      <div class="form-group">
+          <label>Your Name:</label>
+          <input type="text" id="user-name" class="form-control">
+      </div>
+      <img id="pot-kitchen" src="./assets/pot-kitchen.svg" alt= "cookpot with top lifted and a heart emerging"></img>
+      <button id="submit">Submit</button>
+    </section>
     <section class="main-page">
-      <form class="boxed" id="left-pane">
+      <form id="left-pane" class="boxed">
         <h1 class="box-title">What are you looking for?
           <sup class="asterisk">*</sup>
         </h1>
         <section class="food-options">
           <div class="radio-button">
-             <input type="radio" id="side" name="course" value="sides">
+             <input id="side" type="radio" name="course" value="sides">
              <label>Side</label>
           </div>
           <div class="radio-button">
-             <input type="radio" id="main-dish" name="course" value="mainDishes">
+             <input id="main-dish" type="radio" name="course" value="mainDishes">
              <label>Main Dish</label>
           </div>
           <div class="radio-button">
-             <input type="radio" id="dessert" name="course" value="desserts">
+             <input id="dessert" type="radio" name="course" value="desserts">
              <label>Dessert</label>
           </div>
           <div class="radio-button">
-             <input type="radio" id="entire-meal" name="course" value="entire-meal">
+             <input id="entire-meal" type="radio" name="course" value="entire-meal">
              <label>Entire Meal</label>
           </div>
         </section>
-          <button class="lets-cook">LET'S COOK!</button>
+        <button class="lets-cook">LET'S COOK!</button>
       </form>
-      <section class="boxed" id="right-pane">
-        <img class="cookpot-image" src="./assets/cookpot.svg" alt>
+      <section id="right-pane" class="boxed">
+        <img class="cookpot-image" src="./assets/cookpot.svg" alt="cookpot with sauce spilling over side">
         </img>
         <h1 class="suggestion">You should cook:</h1>
         <h2 id="dish"></h2>
         <button class="clear">CLEAR</button>
       </section>
     </section>
+    <footer class="site-footer">
+      <form class="form-inline">
+        <div class="form-group">
+          <label>Recipe Type:</label>
+          <input id="recipe-type" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Recipe Name:</label>
+          <input id="recipe-name" type="text" class="form-control">
+        </div>
+        <button class="add-new">ADD NEW</button>
+      </form>
+    </footer>
   </body>
   <script type="text/javascript" src="main.js"></script>
+  <script type = "text/javascript" src="./assets/data.js"></script>
 </html>

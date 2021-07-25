@@ -1,23 +1,24 @@
 # What's for Dinner?
+**Functionality:
+  What's for dinner? The ultimate question. This application generates a new random side, main dish, dessert, or the whole enchildada (pun intended) for those visitors who brought a real appetite. At login, a user is promted to enter their name and will be relocated to the main application page with a customized greeting. If a user doesn't want to be enticed by a randomly selected course option from a pre-populated list, they can add a recipe of their own! This recipe has to fit into the provided course categories, or else you will get an error message. The user can hit a clear button anytime that they want to clear out an added recipe of their own or one from the pre-populated list! BON APPETIT!
 
-## Overview
+**Contributers:
+    name: Nadia Naji
+    git handle: @najinl
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+##Technologies used:
+  -Javascript
+  -HyperText Markup Language (HTML), semantic-mostly, hopefully...I tried!
+  -CSS
+  -Atom text editor
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+##Special notes:
+  -Added the following files within the assets directory:
+    - pot-kitchen.svg, which is used on the "login" page
+    - data.js, which was used to house the food object from which random lists of sides, main dishes, and desserts were taken. This was done in an effort to keep the main.js file a little more manageable.
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+##Instructions for running RomCom book generator in browser:
+1. Fork this repository: [What's for Dinner Repo](https://github.com/najinl/whats-for-dinner)
+2. Clone down your new, forked repo
+3. cd into the repository
+4. run the command open index.html in your terminal
