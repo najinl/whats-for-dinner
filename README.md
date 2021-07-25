@@ -17,7 +17,7 @@
     - pot-kitchen.svg, which is used on the "login" page
     - data.js, which was used to house the food object from which random lists of sides, main dishes, and desserts were taken. This was done in an effort to keep the main.js file a little more manageable.
 
-##Instructions for running RomCom book generator in browser:
+##Instructions for running What's for Dinner application in browser:
 1. Fork this repository: [What's for Dinner Repo](https://github.com/najinl/whats-for-dinner)
 2. Clone down your new, forked repo
 3. cd into the repository
